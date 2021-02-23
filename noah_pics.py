@@ -28,12 +28,12 @@ for pic in images:
 
         for i in range (w - 1, 0, -1):
             r,g,b = pix[i,300]
-            if(r > 245 or g > 245 or b > 245):
+            if(r > 245 and g > 245 and b > 245):
                 width = i
 
         for i in range(h - 1, 0, -1):
             r,g,b = pix[300,i]
-            if(r > 245 or g > 245 or b > 245):
+            if((r > 245 and g > 245 and b > 245):
                 height = i
 
         crop_res = (3,0,width,height)
